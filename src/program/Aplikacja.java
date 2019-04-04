@@ -25,7 +25,7 @@ public class Aplikacja extends javax.swing.JFrame {
         try {
             pst = conn.prepareStatement(sql);
             rs = pst.executeQuery();
-            tabela.setModel(DbUtils.resultSetToTableModel(rs));         //aktualizuje tabele
+            tabela.setModel(DbUtils.resultSetToTableModel(rs));         //aktualizuje tabelee
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
         } finally {
